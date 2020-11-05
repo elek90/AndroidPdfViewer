@@ -120,6 +120,7 @@ public class PDFViewActivity extends AppCompatActivity implements OnPageChangeLi
                 .onPageChange(this)
                 .enableAnnotationRendering(true)
                 .onLoad(this)
+                .autoReleasingWhenDetachedFromWindow(true)
                 .scrollHandle(new DefaultScrollHandle(this))
                 .spacing(10) // in dp
                 .onPageError(this)
